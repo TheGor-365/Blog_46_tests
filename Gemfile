@@ -27,6 +27,10 @@ gem 'bootstrap', '~> 5.0.0.beta1'
 gem 'jquery-rails'
 gem 'devise'
 
+group :test, :development do
+  gem 'rspec-rails'
+end
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
