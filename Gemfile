@@ -30,6 +30,7 @@ gem 'devise'
 group :test, :development do
   gem 'rspec-rails'
   gem 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
+  gem 'factory_bot_rails'
 end
 
 # Use Active Storage variant
