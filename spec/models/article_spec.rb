@@ -18,4 +18,14 @@ RSpec.describe Article, type: :model do
       expect(article.subject).to eq 'Article for test'
     end
   end
+
+  describe 'last_comment' do
+    it 'returns last comment' do
+      # create article with comments
+      article = create(:article_with_comments)
+
+      # checking
+      expect(article.last_comment.body).to eq 'comment body 3'
+    end
+  end
 end
